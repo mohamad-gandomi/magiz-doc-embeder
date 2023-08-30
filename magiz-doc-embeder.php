@@ -33,8 +33,8 @@ add_action('plugins_loaded', 'magiz_dash_post_load_textdomain');
 
 // Include admin files
 require_once(MAGIZ_DOC_EMBEDER_DIR . 'admin/magiz_enqueue_admin_scripts.php');
-require_once(MAGIZ_DOC_EMBEDER_DIR . 'admin/magiz_custom_document_post_type.php');
-require_once(MAGIZ_DOC_EMBEDER_DIR . 'admin/magiz_custom_document_fields.php');
+require_once(MAGIZ_DOC_EMBEDER_DIR . 'admin/magiz_document_post_type.php');
+require_once(MAGIZ_DOC_EMBEDER_DIR . 'admin/magiz_document_fields.php');
 
 // Include public files
 
