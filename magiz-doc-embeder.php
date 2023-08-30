@@ -31,8 +31,10 @@ function magiz_dash_post_load_textdomain() {
 }
 add_action('plugins_loaded', 'magiz_dash_post_load_textdomain');
 
-// Include public files
-//require_once(MAGIZ_DASH_POST_DIR . 'public/magiz_public_enqueues.php');
-
 // Include admin files
+require_once(MAGIZ_DOC_EMBEDER_DIR . 'admin/magiz_enqueue_admin_scripts.php');
+require_once(MAGIZ_DOC_EMBEDER_DIR . 'admin/magiz_custom_document_post_type.php');
+require_once(MAGIZ_DOC_EMBEDER_DIR . 'admin/magiz_custom_document_fields.php');
+
+// Include public files
 
