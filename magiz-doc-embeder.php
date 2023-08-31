@@ -37,4 +37,5 @@ require_once(MAGIZ_DOC_EMBEDER_DIR . 'admin/magiz_document_post_type.php');
 require_once(MAGIZ_DOC_EMBEDER_DIR . 'admin/magiz_document_fields.php');
 
 // Include public files
+require_once(MAGIZ_DOC_EMBEDER_DIR . 'public/magiz_doc_embeder_shortcode.php');
 
