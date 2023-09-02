@@ -17,6 +17,7 @@ jQuery(document).ready(function($) {
 
             $('#magiz_document').val(attachment.url);
             $('#magiz_document_extension').html(extension);
+            $('input[name="magiz_document_extension"]').val(extension);
 
             if( 'pdf' == extension || 'jpeg' == extension || 'jpg' == extension || 'png' == extension ) {
                 $('#magiz_document_iframe').attr('src', attachment.url);
@@ -25,7 +26,7 @@ jQuery(document).ready(function($) {
             }
 
             if ( 'ppt' == extension || 'pptx' == extension ) {
-                $('#magiz_document_iframe').attr('src', 'https://view.officeapps.live.com/op/view.aspx?src='+attachment.url);
+                $('#magiz_document_iframe').attr('src', '//docs.google.com/gview?url='+attachment.url+'&embedded=true');
                 $('#magiz_document_iframe').css('height', '400px');
                 $('#magiz_document_iframe').css('width', '600px');
             }

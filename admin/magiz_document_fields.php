@@ -47,7 +47,7 @@ function render_document_metabox($post) {
     }
 
     if ( 'ppt' == $document_extension || 'pptx' == $document_extension ) {
-        echo '<iframe src="https://view.officeapps.live.com/op/view.aspx?src='.$document.'" width="600" height="400" frameborder="0">';
+        echo '<iframe src="//docs.google.com/gview?url='.$document.'&embedded=true" width="600" height="400" frameborder="0">';
     }
 }
 
